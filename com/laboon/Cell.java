@@ -2,7 +2,7 @@ package com.laboon;
 
 public class Cell {
 
-	private State _state = State.DEAD;
+	State _state = State.DEAD;
 	
 	private int _xLoc = 0;
 	private int _yLoc = 0;
@@ -70,11 +70,8 @@ public class Cell {
 		} else if (_state == State.ALIVE) {
 			toReturn = '*';
 		} else {
-<<<<<<< HEAD
-			toReturn = '_';
-=======
+
 			toReturn = ' ';
->>>>>>> wjl_display
 		}
 		return toReturn;
 	}
